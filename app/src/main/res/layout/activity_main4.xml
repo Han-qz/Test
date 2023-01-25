@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动态注册广播发送广播"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendAction1"
+            android:text="发送广播"
+            android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="静态注册广播发送广播"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendAction2"
+            android:text="发送广播"
+            android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

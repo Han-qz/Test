@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:orientation="vertical">
+    <!--通过android:orientation属性指定其控件的排列方向
+    有vertical（垂直方向）以及horizontal（水平方向）排列-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startService对应stopService区域"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="startService"
+            android:layout_gravity="center_horizontal"
+            android:onClick="startService"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stopService"
+            android:layout_gravity="center_horizontal"
+            android:onClick="stopService"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bindService对应UnbildService区域"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bindService"
+            android:layout_gravity="center_horizontal"
+            android:text="bindService" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unbindService"
+            android:layout_gravity="center_horizontal"
+            android:onClick="unbindService"
+            />
+    </LinearLayout>
+
+</LinearLayout>
